@@ -23,12 +23,16 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  width: 100%;
-  /* max-width: 750px; */
-  margin: 0 auto;
+.hero {
   background: #23424a;
   color: white;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
   padding: 3em;
 }
 
@@ -36,8 +40,3 @@ body {
   width: 50%;
 }
 
-.bottom-area {
-  padding: 3em;
-  width: 100%;
-  max-width: 750px;
-}
