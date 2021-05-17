@@ -25,7 +25,7 @@ body {
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
-    border: 2px solid yellow;
+    border: 2px solid darkgoldenrod;
 }
 
 .hero__text {
@@ -67,9 +67,30 @@ p {
     text-transform: uppercase;
 }
 
-/* Media Query
-@media (max-width: 650px) {
-    p {
-        width: 100%;
-    }
-} */
+.row {
+    /*display: flex makes the container flex with default value of row*/
+    display: flex;
+    /*this is the default value of display:flex*/
+    flex-direction: row;
+    
+    /*gap creates a gap in your flex items without issues. however, gap is only supported in firefox as of now*/
+    /* gap: 50px; */
+  
+}
+
+/*class + class. is a css that selects only the class that has adjacent element on left*/
+/* as you can notice here. the two css element on right was selected because the first element in left has no column or element before it*/
+.col + .col {
+    background: darkkhaki;
+    margin-left: 30px;
+}
+
+.col {
+    /*since my parent row is now in flex. all of the elements inside in col will become flex items */
+    /*flex items width are automatically populated based in the content*/
+    /* if you created many flex items in col, it will overflow and will start to view sidewards.*/
+    background: green;
+    margin: 0 10px;
+    /* if you put width:100%; this will create even width space in your content */
+    width: 100%;
+}
