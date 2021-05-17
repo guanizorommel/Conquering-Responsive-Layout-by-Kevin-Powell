@@ -42,9 +42,21 @@ h1 {
 .row {
     /* display: flex => flex container */
     display: flex;
+    text-align: center;
 
     /* can't use yet */
     /* gap: 100px; */
+    padding: 3em 0em;
+    text-align: center;
+}
+
+    /*Gap for the columns*/
+.col + .col {
+    margin-left: 100px;
+}
+
+.row h2 {
+    color: #23424A;
 }
 
 .col {
@@ -80,4 +92,18 @@ h1 {
 .btn:hover,
 .btn:focus {
     opacity: .75; 
+}
+
+.three_col h2{
+    color: purple;
+
+}
+
+.two_col {
+    background-color: #23424A;
+    color: white;
+}
+
+.two_col h2 {
+    color: white;
 }
